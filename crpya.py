@@ -17,15 +17,15 @@ import random
 from scapy.all import *
 
 def challenge_1():
-    print("Desafio 1: Decodifique a seguinte string base64: YjRzMzY0X3MzY3IzdEZsNGc=")
-    user_input = input("Digite sua resposta: ")
+    print("Challenge 1: Decode the following base64 string: YjRzMzY0X3MzY3IzdEZsNGc=")
+    user_input = input("Type your Answer: ")
     encoded_string = "YjRzMzY0X3MzY3IzdEZsNGc="
     decoded_string = base64.b64decode(encoded_string).decode("utf-8")
     return user_input.strip() == decoded_string
 
 def challenge_2():
-    print("Desafio 2: Analise o arquivo 'qakbot.pcap' e encontre o endereço IP de origem nas requisições HTTP.")
-    user_input = input("Digite o IP que você encontrou: ")
+    print("Challenge 2: Parse the 'qakbot.pcap' file and find the source IP address in the HTTP requests.")
+    user_input = input("Enter the IP you found: ")
 
     pcap_file = "qakbot.pcap"
     packets = rdpcap(pcap_file)
@@ -40,14 +40,14 @@ def challenge_2():
                 break
 
     if not ip_found:
-        print("O IP de origem 179.60.146.16 não foi encontrado.")
+        print("The source IP correct was not found.")
         return False
 
     return user_input.strip().lower() == "179.60.146.16"
 
 def challenge_3():
-    print("Desafio 3: Filtre os endereços IP usando Regex em um arquivo chamado 'sample_log.log'")
-    user_input = input("Digite sua resposta: ")
+    print("Challenge 3: Filter IP addresses using Regex in a file called 'sample_log.log'")
+    user_input = input("Type your Answer: ")
     with open("sample_log.log", "r") as f:
         log_data = f.read()
 
@@ -68,14 +68,14 @@ def challenge_4():
     original_text = "H0k1ngisc0m1ng"
     scrambled_text = scramble_text(original_text)
 
-    print(f"Desafio 4: O seguinte texto foi embaralhado: {scrambled_text}. Descubra o texto original.")
-    user_input = input("Digite sua resposta: ")
+    print(f"Challenge 4: The following text has been scrambled: {scrambled_text}. Discover the original text.")
+    user_input = input("Type your Answer: ")
 
     return user_input.strip() == original_text
 
 def challenge_5():
-    print("Desafio 5: Descriptografe o arquivo 'test.txt.hacked' usando a chave 'blackhatpythoncs' e obtenha o conteúdo do arquivo.")
-    user_input = input("Digite sua resposta: ")
+    print("Challenge 5: Decrypt the 'test.txt.hacked' file using the 'blackhatpythoncs' key and get the contents of the file.")
+    user_input = input("Type your Answer: ")
 
     file_name = "test.txt.hacked"
     with open(file_name, "rb") as file:
@@ -100,12 +100,12 @@ def main():
 
     for challenge in challenges:
         if challenge():
-            print("Resposta correta!")
+            print("Right answer!")
             score += 10
         else:
-            print("Resposta incorreta!")
+            print("Incorrect answer!")
 
-    print(f"Parabéns! Sua pontuação final é: {score}")
+    print(f"Congratulations! Your final score is: {score}")
 
 if __name__ == "__main__":
     main()
