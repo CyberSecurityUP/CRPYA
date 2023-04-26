@@ -13,5 +13,6 @@
         <input type="text" id="name" name="name" required>
         <button type="submit">Start the challenges</button>
     </form>
+    <a href="https://github.com/CyberSecurityUP/crpya.github.io">Challenge and Resource</a>
 </body>
 </html>
