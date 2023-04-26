@@ -41,7 +41,7 @@
         </form>
     <?php else: ?>
         <h1>CRPYA Certified</h1>
-        <p>Congratulations, <?= htmlspecialchars($name) ?>! You've completed the PyWars challenges.</p>
+        <p>Congratulations, <?= htmlspecialchars($name) ?>! You've completed the CRPYA challenges.</p>
         <p>Your Score: <?= $score ?> of <?= count($correct_answers) * 10 ?> Score.</p>
  	<img src="crpya.png" alt="Certificado PyWars">
     <?php endif; ?>
