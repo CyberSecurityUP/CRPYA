@@ -14,5 +14,7 @@
         <button type="submit">Start the challenges</button>
     </form>
     <a href="https://github.com/CyberSecurityUP/crpya.github.io">Challenge and Resource</a>
+    <a href="https://github.com/CyberSecurityUP/Python-for-Security">Python for Security Course by Joas</a>
+    <p> WARNING: You can bypass the challenge if you want, but that's no fun :( </a>
 </body>
 </html>
