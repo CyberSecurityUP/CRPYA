@@ -33,7 +33,7 @@
         <form action="challenges.php" method="POST">
             <?php for ($i = 1; $i <= 5; $i++): ?>
                 <label for="user_answers[<?= $i - 1 ?>]">Challenge <?= $i ?>:</label>
-                <input type="text" id="user_answers[<?= $i - 1 ?>]" name="user_answers[]" required>
+                <input type="password" id="user_answers[<?= $i - 1 ?>]" name="user_answers[]" required>
                 <br>
             <?php endfor; ?>
 
